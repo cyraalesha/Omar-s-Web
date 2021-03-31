@@ -1,0 +1,865 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  background-color: #2f2f32;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size:80px;
+}
+
+h3{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 40px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding: 4%
+}
+.nav-btns{
+  margin: 0 5vw;
+}
+.nav a{
+  display: inline-block;
+  margin: 0 50px;
+  font-size: 14.5px
+}
+
+nav img{
+  margin-left: 5vw ;
+  height:50px ;
+  width:50px ;
+}
+
+
+.topnav {
+  overflow: hidden;
+  /* width: 100vw; */
+  padding: 30px
+}
+.nav-logo{
+  border-radius: 50%;
+  height:70px;
+  margin-left: 60px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  color: #FF5757;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  overflow: hidden;
+
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 60px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1000px) {
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 30px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.landingpage{
+  background-image: url('img/background.png');
+  background-color: #2F2F32;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.opening {
+  width: 50%;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  padding-bottom: 100px;
+}
+.opening h1{
+  margin: 0;
+}
+.opening h3{
+  margin-top: 5.5vh;
+  margin-bottom: 5.5vh;
+  font-size: 1.4vw
+}
+button{
+  cursor: pointer;
+}
+.button {
+  background-color: #FF5757;
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  
+}
+
+.button:hover {
+  background-color:#792929;
+}
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* about us section **************************/
+#about-us {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container {
+  display: flex;
+  margin: 5% 10%;
+  padding: 2%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-content h1 {
+  margin-top: 90px;
+  margin-bottom: 0;
+  font-family: "Spartan", sans-serif;
+  font-size: 4vw;
+  letter-spacing: 3px;
+  position: relative;
+}
+.heading-underline-element{
+    margin: 5% 0;
+}
+.testimonial-underline-element{
+  margin: 0;
+  margin-left: 120px; 
+  margin-bottom: 50px
+}
+.about-content p {
+  margin: 0 40% 0 0;
+  font-size: 1vw;
+  line-height: 29px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  max-width: 800px;
+}
+.profile-img {
+  margin-top: 30%;
+  width: 30vw;
+  min-width: 300px;
+}
+
+.red-mountain-element {
+  width: 1000px;
+  position: absolute;
+  left: 800px;
+  top: 300px;
+  z-index: -1;
+}
+
+.about-content {
+  width: 80%;
+  margin-right:90px; 
+}
+
+
+@media only screen and (max-width: 800px) {
+  .about-container{
+    flex-direction: column;
+  }
+  .about-content p{
+    font-size: 15px;
+    width: 100%;
+  }
+}
+/* ******************************************** */
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px
+}
+#services h1{
+  font-size: 70px;
+}
+.training img{
+  width: 350px;
+}
+
+.description-text {
+  margin-top: -7vh;
+  color: white;
+}
+
+.maincontent {
+  color: white;
+   margin-top: 10vh;
+  display: flex;
+  max-width: 700px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.whatwedo {
+  font-size: 15px;
+  padding: 18px 25px;
+  display: inline;
+
+}
+
+.training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 100px; 
+  
+}
+#rates{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 100px;
+}
+.rates-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+
+}
+.price{
+  margin: 25px;
+  color: white;
+}
+.price h3{
+  text-align: center;
+}
+#training-section{
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: -50px; 
+}
+.training-line{
+  position: absolute;
+  bottom: 0;
+      left: 50%;
+    transform: translate(-50%, 0);
+}
+.whatwedotext {
+  margin-top: 6vh;
+}
+@media only screen and (max-width: 800px) {
+  #services h1{
+    font-size: 40px;
+  }
+}
+/* *************************************** */
+/* Testimonials */
+/***************************************** * 
+
+
+
+
+/* every slide */
+#testimonial{
+ margin: 100px 0;
+}
+.container {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.testimonial-heading {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+  font-size: 60px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 0px; 
+}
+.cl {
+  height: 200px;
+  /* border-radius: 30px; */
+  margin: 0 80px;
+  background: #616266;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  font-size: 16px;
+}
+.client-img{
+    border-radius: 50px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+.cl p{
+    text-align: center;
+}
+@media only screen and (max-width : 769px){
+    .testimonial-heading{
+      font-size: 40px;
+    }
+    .cl{
+        margin: 0 20px;
+        font-size: 8px;
+        padding: 15px;
+    }
+    .client-img{
+        border-radius: 50px;
+        object-fit: cover;
+        width: 60px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width : 320px){
+    .testimonial-heading{
+        font-size: small;
+    }
+    .cl{
+        height: 100px;
+        margin: 0 20px;
+        font-size: 4px;
+        padding: 15px;
+    }
+    .client-img{
+        border-radius: 50px;
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+    }
+}
+/* *********************************************** */
+.slick-active {
+  padding: 20px 0;
+}
+.slick-center {
+  transform: scale(1.08);
+  
+}
+.slick-slide:not(.slick-active) {
+  margin: 20px 0;
+}
+.child {
+  width: 100%;
+}
+.slide:not(.slick-active) {
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  border: none;
+  background: transparent;
+}
+.arrow :hover{
+    color: #ff5757;
+    transition: 0.5s ease-in-out;
+}
+.prev {
+  top: 50%;
+  left: -40px;
+}
+.next {
+  right: -40px;
+  top: 50%;
+}
+
+.slick-dots li button::before {
+    opacity: 80%  !important;
+    color: white !important;
+    font-size: 7px !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 95% !important;
+    color: #ff5757 !important;
+    font-size: 10px !important;
+}
+
+/* contact us******************************************** */
+#contact-us{
+	display: flex;
+    justify-content: center;
+ padding: 50px
+
+}
+.contact-us-heading{
+    margin: 0 0 48px 0;
+	color: white;
+	font-size: 60px;
+	/* font-family: ; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+.contact-us-heading::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 5px;
+    width: 192px;
+    background-color: red;
+    border-radius: 2px;
+}
+
+input, textarea{
+	display: block;
+	background: transparent;
+	color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	/* border-style: none; */
+	padding: 10px;
+	margin: 20px 0;
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+.full-contact{
+    max-width: 450px;
+}
+textarea{
+	resize: none;
+	height: 120px;
+}
+
+::placeholder{
+	color: white;
+	/* CHNAGE FONT SIZE LATER */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	opacity: 1;
+}
+
+.subscribe-container input::placeholder {
+    color: #ff5757;  
+  }
+.contact-us-btn{
+	background: #ff5757;
+	color: white;
+	font-size: large;
+	border-style: none;
+	padding: 20px 10px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+.newsletter-container p{
+	margin: 0;
+	color: white;
+	font-size: 10px;
+	line-height: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subscribe-container{
+	display: flex;
+	box-sizing: border-box;
+	padding: 10px 0;
+
+}
+.subscribe-container input{
+	display: inline-block;
+	width: 70%;
+	margin: 0;
+	
+}
+.subscribe-container .subscribe-btn{
+	margin-left: 15px;
+	width: 30%;
+	background: #ff5757;
+	color: white;
+	font-size: small;
+	border-style: none;
+	box-sizing: border-box;
+}
+.contact-map-img{
+  max-width: 400px;
+  z-index: -1;
+}
+
+.omar-contacts{
+    position: relative;
+    flex: 1;
+    margin:10px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* the text for address */
+.map-info{
+    position: absolute;
+    top: 124px;
+    left: 170px;
+    display: flex;
+    align-items: center;
+}
+.omar-contact-info .map-info i {
+    color: #ff5757;
+    font-size: 48px;
+}
+/* .omar-contact-info {
+    margin: 0 0 60px 0;
+} */
+.omar-contact-info p {
+    margin: 10px 0px;
+    padding: 0px;
+    text-align: center;
+}
+.omar-contact-info i{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.social-icon-container a{
+    color: white;
+    font-size: 40px;
+    margin: 0 10px;
+}
+/* Contact Page / new Tab****************************** */
+.contactlandingpage{
+  background: url('img/gymbackground.png') no-repeat center center fixed; 
+  background-color: #2F2F32;
+  background-size: cover;
+}
+#contact-us-page{
+  padding-left: 100px;
+  display: flex;
+
+}
+.full-contact-contactpage{
+  margin-right:200px; 
+}
+.contact-opening{
+  width: auto;
+}
+.contact-map-card{
+ 
+}
+
+/* training page  **********************************/
+
+.traininglandingpage {
+  background-image: url('img/lifting.png');
+  background-color: #2F2F32;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#fitness-rates-btn{
+    background-color: transparent;
+    border: 1px solid #FF5757;
+    color: #FF5757;
+}
+#fitness-classes-btn{
+    padding: 20px 48px;
+}
+.fitness-opening{
+  padding-top:100px;
+  padding-bottom:200px; 
+}
+.buttons a {
+    margin: 50px 20px;
+}
+.train {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.training-red-headline {
+  /* width: 45%; */
+  margin-top: -5vh;
+}
+
+.Explaintitle {
+  font-size: 45px;
+  color: white; 
+  margin-top: -6vh;
+  display: flex;
+  width: 30vw;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.maincontent .maincontent-for-page{
+  margin: 0px;
+}
+
+.list {
+  margin-top: -3vh;
+}
+
+.toolong {
+  width: 50vw;
+}
+
+.square-element{
+  position: absolute;
+  bottom: 70px;
+  right: 100px;
+  width: 500px;
+  z-index: -1;
+}
+
+.Explaintitle2 Explaintitle {
+  width: 300px;
+}
+
+.maincontent2 {
+  margin-top: 125px
+}
+
+
+
+/* footer section ************************************* */
+#footer{
+  padding-top: 300px
+}
+.footer-box{
+	position: relative;
+	background-color: #f15858;
+	color: white;
+	padding: 150px 200px 70px;
+
+}
+.footer-box h2{
+	display: inline-block;
+}
+.footer-info-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 70px;
+	
+}
+.footer-info-container a{
+	display: block;
+  padding: 10px 50px;
+}
+.footer-logo img{
+  width: 30px;
+  height: 30px;
+  border-radius:50%; 
+}
+.footer-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-subscribe-container input::placeholder{
+  color: white;
+}
+.footer-subscribe-container .subscribe-btn{
+  background-color: white;
+  color: #f15858;
+  border-radius: 25px;
+  outline:none;
+}
+.footer-newsletter-container{
+	max-width: 300px;
+}
+.copyrightText{
+	font-size: 13px;
+	text-align: center;
+}
+.cta-container{
+  position: absolute;
+  top: -170px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1;
+	background-color: white;
+	width: 600px;
+  height: 200px;
+  padding: 20px;
+	border-radius: 25px;
+
+}
+.cta-container h1{
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.cta-container button{
+  display: inherit;
+  margin: 0 auto;
+  background-color: #f15858;
+  color: white;
+  border-radius: 25px;
+  outline:none;
+  border: none;
+  padding: 20px 35px;
+}
+
+
+/* equipment page */
+
+.equipmentlandingpage {
+  background-image: url('dumbells.jpg');
+  background-color: #2F2F32;
+  background-repeat: no-repeat;
+  height: 100% auto;
+  width: 100% auto
+}
+
+.Opening-Description-Equipment{
+  margin-left: 20px;
+}
+
+.kit-titles {
+  color: #FFF;
+  text-align: center;
+}
+
+.kit-description{
+  color: #FFF;
+  text-align: center;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+

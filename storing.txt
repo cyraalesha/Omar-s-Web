@@ -1,0 +1,7 @@
+.red-mountain-element {
+  width: 1000px;
+  position: absolute;
+  left: 800px;
+  top: 300px;
+  z-index: -1;
+}
